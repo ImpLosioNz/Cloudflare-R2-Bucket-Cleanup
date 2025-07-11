@@ -13,6 +13,17 @@ from botocore.exceptions import ClientError, NoCredentialsError
 import time
 from typing import List, Dict
 
+# =============================================================================
+# CONFIGURATION - UPDATE THESE VALUES WITH YOUR CLOUDFLARE R2 CREDENTIALS
+# =============================================================================
+CONFIG = {
+    'account_id': 'your-cloudflare-account-id',    # Your Cloudflare account ID
+    'access_key': 'your-r2-access-key',            # Your R2 API access key
+    'secret_key': 'your-r2-secret-key',            # Your R2 API secret key
+    'bucket_name': 'your-bucket-name'              # Name of your R2 bucket
+}
+# =============================================================================
+
 class R2BucketCleaner:
     def __init__(self, account_id: str, access_key: str, secret_key: str, bucket_name: str):
         """
