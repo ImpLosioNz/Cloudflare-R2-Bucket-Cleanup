@@ -19,7 +19,7 @@ Cloudflare R2 bucket and API credentials
 Installation
 
 Clone the repository:
-bashgit clone https://github.com/yourusername/r2-bucket-cleanup.git
+bashgit clone https://github.com/ImpLosioNz/r2-bucket-cleanup.git
 cd r2-bucket-cleanup
 
 Install required dependencies:
